@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Confirm</title>
+  </head>
+  <body>
+    <p>Couldn't find the word you were looking for.</p>
+    <p>Is {{string}} the word you were looking for? Y for yes, N for no.</p>
+    <form method="post">
+      {% csrf_token %}
+      <input type="text" name="ans" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>
